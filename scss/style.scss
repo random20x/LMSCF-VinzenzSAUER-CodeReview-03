@@ -1,0 +1,183 @@
+// With this scss we make sure that the whole general structure of the website looks similar to the given template.
+@media (max-width: 480px) {
+    .make_invisible {
+        display: none !important;
+    }
+    #calculate-btn,
+    #printed-result,
+    #slogan {
+        font-size: 1.2em !important;
+        width: 95% !important;
+    }
+    #back-img {
+        height: 60% !important;
+    }
+}
+
+* {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    #header {
+        display: flex;
+        justify-content: space-around;
+        background-color: #FDF3F3;
+        height: 10%;
+        padding: 2em;
+        #logo-top {
+            padding: 1em;
+        }
+    }
+    #navbar {
+        background-color: #8E1918;
+        ul {
+            color: white;
+            padding: 1em;
+            a {
+                position: relative;
+                text-decoration: none;
+                color: white;
+                padding: 1em;
+                left: 2em;
+            }
+            a:hover {
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+            li {
+                display: inline;
+                text-decoration: none;
+            }
+        }
+    }
+    #back-img {
+        background-image: url("../img/traffic.jpg");
+        background-size: cover;
+        height: 35em;
+        width: 100%;
+        #carIns {
+            color: white;
+            padding: 1em;
+        }
+        #calculation-field {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 3px solid grey;
+            color: rgba(50, 50, 50, 1);
+            width: 80%;
+            height: 80%;
+            padding: 2em 1em 1em 1em;
+            z-index: 999;
+            #slogan {
+                text-align: center;
+                width: 70%;
+            }
+            .wrapper-input1,
+            .wrapper-input2 {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1em;
+            }
+            input[type="text"],
+            #countries {
+                height: 2em;
+                width: 200px;
+            }
+            #calculate-btn {
+                display: flex;
+                justify-content: center;
+                margin-top: 2%;
+                padding: 0.1em;
+                font-size: 1.6em;
+                height: 1.5em;
+                width: 28%;
+                border-radius: 15px;
+                background-color: #339235;
+                color: white;
+                border-color: black;
+            }
+            #printed-result {
+                text-align: center;
+                margin-top: 1em;
+                font-size: 2em;
+                width: 50%;
+            }
+        }
+    }
+    #grey-msg {
+        position: relative;
+        background-color: lightgrey;
+        z-index: -1;
+        padding: 7% 20% 3% 20%;
+        text-align: center;
+        h2 {
+            color: rgba(48, 48, 48, 1);
+        }
+        p {
+            color: rgba(71, 71, 71, 1);
+        }
+    }
+    #options-info {
+        display: flex;
+        .options {
+            margin-top: 8%;
+            margin-bottom: 8%;
+            height: 20%;
+            width: 35%;
+            border-top: solid 3px #2D2D2D;
+            border-left: solid 1px lightgrey;
+            box-shadow: 2px 2px 5px lightgrey;
+            padding: 5%;
+            border-radius: 5px;
+            ul {
+                list-style: none;
+            }
+            ul li:before {
+                content: "\2713\0020";
+                color: #8ED2D4;
+                font-weight: bold;
+                padding: 2%;
+            }
+            li {
+                margin: 5% 0 5% 0;
+            }
+            hr {
+                color: rgba(92, 92, 92, 0.1);
+                margin-bottom: 1.5em;
+            }
+            .blue-heading {
+                font-weight: normal;
+                color: #5D779F;
+                font-size: 1.3em;
+            }
+            .smallinfo {
+                color: grey;
+                padding-top: 0.1em;
+                margin-bottom: 1em;
+            }
+        }
+    }
+    footer {
+        background: black;
+        color: white;
+        ul {
+            color: white;
+            padding: 1em;
+            a {
+                text-decoration: none;
+                color: white;
+            }
+            li {
+                display: inline;
+                text-decoration: none;
+                padding: 1em;
+            }
+        }
+        #logo-bot {
+            display: flex;
+            justify-content: flex-end;
+            width: 98%;
+        }
+        #footer-note {
+            text-align: center;
+            padding-bottom: 1em;
+        }
+    }
+}

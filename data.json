@@ -1,0 +1,37 @@
+let teamMember = [{
+    "id": 1,
+    "name": "Chris Scharte",
+    "jobtitel": "Cost Accountant",
+    "img": "./img/accountant.jpg",
+    "email": "chris@carinsurance.com"
+}, {
+    "id": 2,
+    "name": "Suzanne Segebrecht",
+    "jobtitel": "Water Main Pipe Layer",
+    "img": "./img/water.jpg",
+    "email": "suzanne@carinsurance.com"
+}, {
+    "id": 3,
+    "name": "Kimberly Bollinger",
+    "jobtitel": "Operational Intelligence Officer (Management)",
+    "img": "./img/operational.jpg",
+    "email": "kimberly@carinsurance.com"
+}, {
+    "id": 4,
+    "name": "Steffen Grießhammer",
+    "jobtitel": "Environmental Economist",
+    "img": "./img/environmental.jpg",
+    "email": "steffen@carinsurance.com"
+}, {
+    "id": 5,
+    "name": "Marius Lindenmann",
+    "jobtitel": "Chain Saw Mechanic",
+    "img": "./img/chain_saw.jpg",
+    "email": "marius@carinsurance.com"
+}, {
+    "id": 6,
+    "name": "Monika Murswiek",
+    "jobtitel": "Marketing Administrator",
+    "img": "./img/marketing.jpg",
+    "email": "monika@carinsurance.com"
+}]

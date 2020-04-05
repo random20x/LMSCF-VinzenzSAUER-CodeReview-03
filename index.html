@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<title>CodeReview 03</title>
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./scss/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <title>Car Insurance</title>
 </head>
+<header id="header" class="">
+    <img src="./img/logo.png" alt="logo" id="logo-top">
+    <img src="./img/banner.png" alt="banner" id="banner-top" class="make_invisible">
+</header>
+<nav id="navbar">
+    <ul>
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li><a href="team.html" title="Team">Team</a></li>
+    </ul>
+</nav>
+
 <body>
-	<div id="container">
-		<header>
-			<div class="div-one">
-				<img src="img/logo.png" alt="Insurance Company Logo">
-			</div>
-			<div class="div-two">
-				<img src="img/banner.png" alt="Insurance Company Banner">
-			</div>
-		</header><!-- /header -->
-
-		<nav id="nav-bar-one">
-			<ul>
-				<li><a href="index.html" title="">Home</a></li>
-				<li><a href="team.html" title="">Team</a></li>
-			</ul>
-		</nav>
-
-		<main>
-			<div class="section-one">
-				<h2>
-					Great coverage begins <br> with a custom quote
-				</h2>
-				<div class="section-two">
-					
-				</div>
-			</div>
-		</main>
-	</div>
+    <div id="back-img">
+        <h1 id="carIns">Car insurance</h1>
+        <div id="calculation-field">
+            <h1 id="slogan">Great coverage begins with a custom quote</h1>
+            <div class="wrapper-input1">
+                <div class="input-and-text">
+                    <p>Your name:</p>
+                    <input type="text" name="" value="" id="name">
+                </div>
+                <div class="input-and-text">
+                    <p>Your age:</p>
+                    <input type="text" name="" value="" id="age">
+                </div>
+            </div>
+            <div class="wrapper-input2">
+                <div class="input-and-text">
+                    <p>Country:</p>
+                    <select name="Country" id="countries">
+									<option value="austria">Austria</option>
+									<option value="hungary">Hungary</option>
+									<option value="greece">Greece</option>
+								</select>
+                </div>
+                <div class="input-and-text">
+                    <p>Horsepower of your car:</p>
+                    <input type="text" name="" value="" id="ps">
+                </div>
+            </div>
+            <div id="return-value">
+                <button type="submit" id="calculate-btn">Calculate</button>
+                <p id="printed-result"></p>
+            </div>
+        </div>
+    </div>
+    <div id="grey-msg" class="make_invisible">
+        <h2>Un-complicating car coverage</h2>
+        <p>Understanding your coverage options shouldn't be so hard. We'll guide you through available coverage types, starting with who and what is covered.</p>
+    </div>
+    <div id="options-info">
+        <div class="options">
+            <h4 class='blue-heading'>What comes standard</h4>
+            <p class='sub-heading'>The coverage you need</p>
+            <ul>
+                <li>Bodily Injury Liability</li>
+                <li>Property Damage</li>
+                <li>Medical Payments</li>
+            </ul>
+            <hr>
+            <h4>Benefits</h4>
+            <p class='smallinfo'>12-month rate guarantee | 24/7 customer service | Lifetime Repair Guarantee</p>
+        </div>
+        <div class="options">
+            <h4 class='blue-heading'>Add-on protection & coverage</h4>
+            <p class='sub-heading'>For more peace of mind</p>
+            <ul>
+                <li>Better Car Replacement</li>
+                <li>Towing & Labor</li>
+                <li>Rental Car Coverage</li>
+            </ul>
+            <hr>
+            <h4>Earned Benefits</h4>
+            <p class='smallinfo'>Accident Forgiveness<sup>1</sup> | New Car Replacement&#8482;</p>
+        </div>
+    </div>
 </body>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Home">Home</a></li>
+            <li><a href="team.html" title="Team">Team</a></li>
+        </ul>
+    </nav>
+    <div id='logo-bot'>
+        <a href="https://lms.codefactory.live/" target="_blank"><img src="./img/logo-inv.png" alt="logo"></a>
+    </div>
+    <p id='footer-note'>Vinzenz SAUER - CodeFactory 2020</p>
+</footer>
+<script src="./js/calc.js" type="text/javascript" charset="utf-8"></script>
+
 </html>
