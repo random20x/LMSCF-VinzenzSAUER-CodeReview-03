@@ -1,6 +1,6 @@
 let teamWrapper = document.getElementById('team-wrapper');
 
-// first we will loop through the JSON file so that can derive all the data
+// first we will loop through the JSON file so that we can derive all the data
 
 for (let i in teamMember) {
     teamWrapper.insertAdjacentHTML("beforeend", `
@@ -12,7 +12,7 @@ for (let i in teamMember) {
 		</div>`);
 }
 
-// important here is the "(e)" this means that we are adding here an Eventlistener
+// important here is the "(e)", this means that we are adding here an Eventlistener
 
 document.querySelectorAll('.member').forEach((e) => {
     e.addEventListener("click", function() {

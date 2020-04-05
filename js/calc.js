@@ -1,6 +1,7 @@
 let insurance = '';
 
 // here we take care that every element in the html file is assigned to a new JS variable.
+
 function calculateInsurance() {
     let name = document.getElementById('name').value;
     let age = parseInt(document.getElementById('age').value);
